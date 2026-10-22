@@ -1,0 +1,5 @@
+# robots.txt — Areté · Osteopatia, Nutrizione e Allenamento (Segrate, MI)
+User-agent: *
+Allow: /
+
+Sitemap: https://www.aretesystem.it/sitemap.xml
