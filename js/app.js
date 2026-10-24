@@ -55,26 +55,59 @@ function loadMaps() {
     function toggleFaq(el) {
         var item = el.parentElement;
         var wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
-        if (!wasOpen) { item.classList.add('open'); }
+        document.querySelectorAll('.faq-item.open').forEach(function(openItem) { openItem.classList.remove('open'); var b = openItem.querySelector('[aria-expanded]'); if (b) { b.setAttribute('aria-expanded', 'false'); } });
+        if (!wasOpen) { item.classList.add('open'); el.setAttribute('aria-expanded', 'true'); }
+    }
+    // ══════════ Form: UTM, invio a Google Sheet, redirect /grazie/, WhatsApp ══════════
+    var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz7V31hb6pPfotYOaW8hgvTBC47HZ4XPz80UiIWdnb9gcnoFw1SJPqW8AxewyxvorcO/exec';
+    var FORM_T0 = Date.now(); // antispam: momento di caricamento pagina
+    (function () {
+        try {
+            var p = new URLSearchParams(location.search);
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) {
+                var v = p.get(k); if (v) { sessionStorage.setItem('arete_' + k, v.slice(0, 200)); }
+            });
+            if (!sessionStorage.getItem('arete_landing')) {
+                sessionStorage.setItem('arete_landing', (location.pathname + location.search).slice(0, 300));
+            }
+        } catch (e) {}
+    })();
+    function fillHidden(f) {
+        try {
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) {
+                var el = f.elements[k]; if (el) { el.value = sessionStorage.getItem('arete_' + k) || ''; }
+            });
+            var pg = f.elements['pagina']; if (pg) { pg.value = sessionStorage.getItem('arete_landing') || location.pathname; }
+        } catch (e) {}
     }
     function handleSubmit(e) {
         e.preventDefault();
-        var nome = document.getElementById('nome').value;
-        var cognome = document.getElementById('cognome').value;
-        var email = document.getElementById('email').value;
-        var telefono = document.getElementById('telefono').value;
-        var interesse = document.getElementById('interesse').value;
-        var messaggio = document.getElementById('messaggio').value;
+        var f = e.target;
+        var done = false;
+        var go = function () { if (done) { return; } done = true; window.location.href = '/grazie/'; };
+        // Antispam: honeypot compilato = bot. Finge successo senza salvare né tracciare.
+        var hp = f.elements['website'];
+        if (hp && hp.value) { go(); return; }
+        fillHidden(f);
+        var tEl = f.elements['t']; if (tEl) { tEl.value = String(Date.now() - FORM_T0); }
+        try { sessionStorage.setItem('arete_lead', '1'); } catch (_) {}
+        if (FORM_ENDPOINT) {
+            var body = new URLSearchParams(new FormData(f)).toString();
+            fetch(FORM_ENDPOINT, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }, body: body }).then(go).catch(go);
+            setTimeout(go, 2500);
+        } else {
+            go();
+        }
+    }
+    function openWhatsAppForm() {
+        var g = function (id) { var el = document.getElementById(id); return el ? el.value : ''; };
         var msg = 'Ciao! Vorrei prenotare una consulenza Areté.\n\n';
-        msg += 'Nome: ' + nome + ' ' + cognome + '\n';
-        msg += 'Email: ' + email + '\n';
-        msg += 'Telefono: ' + telefono + '\n';
-        msg += 'Interesse: ' + interesse + '\n';
-        msg += 'Messaggio: ' + messaggio;
-        var waUrl = 'https://api.whatsapp.com/send/?phone=393517005245&text=' + encodeURIComponent(msg) + '&type=phone_number&app_absent=0';
-        window.open(waUrl, '_blank');
-        e.target.reset();
+        msg += 'Nome: ' + g('nome') + ' ' + g('cognome') + '\n';
+        msg += 'Email: ' + g('email') + '\n';
+        msg += 'Telefono: ' + g('telefono') + '\n';
+        msg += 'Mi interessa: ' + g('interesse') + '\n';
+        msg += 'Messaggio: ' + g('messaggio');
+        window.open('https://api.whatsapp.com/send/?phone=393517005245&text=' + encodeURIComponent(msg) + '&type=phone_number&app_absent=0', '_blank');
     }
     window.addEventListener('scroll', function() {
         var nav = document.getElementById('nav');

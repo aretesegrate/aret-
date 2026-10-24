@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(d){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r){d.documentElement.classList.add('anim');setTimeout(function(){if(!window.gsap||!window.ScrollTrigger){d.documentElement.classList.remove('anim');}},3500);}})(document);</script>
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="ZoJkcSR2dGacZYsG0x8IwwIzmcoqwtP5UBdC-SM7An4" />
 
     <!-- ══════════════════════ iubenda · Cookie Solution ══════════════════════ -->
     <script type="text/javascript" src="https://embeds.iubenda.com/widgets/842d254e-97e4-49e7-a8ac-940b2ba4cbfd.js"></script>
+    <!-- ══════════ Meta Pixel (attivato da iubenda solo dopo consenso marketing) ══════════ -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2493718584485626');
+    fbq('track','PageView');
+    </script>
 
     <!-- ══════════════════════ SEO PRIMARIO ══════════════════════ -->
     <title>Domande Frequenti | Areté, Segrate (Milano)</title>
@@ -53,7 +60,7 @@
     <!-- ══════════════════════ FONTS ══════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ══════════════════════ DATI STRUTTURATI (JSON-LD) ══════════════════════ -->
     <script type="application/ld+json">
@@ -71,6 +78,7 @@
       ],
       "priceRange": "€€",
       "telephone": "+39 351 700 5245",
+      "email": "aretesegrate@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Conte Suardi 49",
@@ -128,7 +136,8 @@
     }
     </script>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/pages.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -200,120 +209,138 @@
         <symbol id="ic-users" viewBox="0 0 24 24"><path d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73L18 18H6l.01-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.6-.91 4.23-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58A2.01 2.01 0 0 0 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></symbol>
         <symbol id="ic-puzzle" viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2V10.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7s2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></symbol>
         <symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 2L9.91 8.84 3 9.27l5.45 4.73L6.82 21 12 17.27 17.18 21l-1.64-7.03L21 9.27l-6.91-.43L12 2z"/></symbol>
+        <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></symbol>
+        <symbol id="ic-arrow-down" viewBox="0 0 24 24"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></symbol>
     </svg>
 
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a class="nav-brand" href="/" aria-label="Areté, torna alla home">
-                <span class="nav-brand-text">Aret<span>é</span></span>
-                <span class="nav-brand-dot"></span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/osteopatia/">Osteopatia</a></li>
-                <li><a href="/nutrizione/">Nutrizione</a></li>
-                <li><a href="/allenamento/">Allenamento</a></li>
-                <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                <li><a href="/faq/" class="active">FAQ</a></li>
-                <li><a href="/contatti/" class="nav-cta">Prenota</a></li>
-            </ul>
-            <div class="mob-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Apri menu" role="button" tabindex="0">
-                <span></span><span></span><span></span>
+    <a class="skip" href="#main">Vai al contenuto</a>
+
+    <!-- NAV -->
+    <nav class="bnav" id="nav" data-theme="light" aria-label="Principale">
+        <div class="bnav-in">
+            <a href="/" class="logo" aria-label="Areté, torna alla home">ARET<span class="e">É</span><span class="dot" aria-hidden="true"></span></a>
+            <div class="bnav-right">
+                <a href="/contatti/" class="pill pill--nav">Prenota</a>
+                <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="bmenu">
+                    <span class="roll"><span>Menu</span><span>Chiudi</span></span>
+                    <span class="burger" aria-hidden="true"><i></i><i></i></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!%20Vorrei%20informazioni%20sul%20percorso%20Aret%C3%A9.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float" aria-label="Scrivici su WhatsApp">
-        <svg><use href="#ic-wa"/></svg>
-        <div class="wa-tooltip">Scrivici su WhatsApp</div>
-    </a>
-
-    <main class="page" id="faq">
-        <section class="section">
-            <div style="text-align:center;margin-bottom:1rem" class="reveal">
-                <div class="section-label" style="text-align:center">Domande Frequenti</div>
-                <h1 class="section-title" style="text-align:center">Tutto ciò che vuoi <em>sapere</em></h1>
-                <p class="section-desc" style="text-align:center;margin:0 auto">Le risposte alle domande più comuni sul metodo Areté. Non trovi la tua? <a href="/contatti/" style="color:var(--green);font-weight:700;cursor:pointer;text-decoration:underline">Scrivici</a>.</p>
-            </div>
-            <div class="faq-wrap">
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Cosa rende il metodo Areté diverso dagli altri?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">La differenza è l'<strong>integrazione reale</strong> tra le tre discipline. Non riceverai consigli isolati: osteopata e nutrizionista lavorano insieme su un unico piano costruito intorno a te. Osteopatia, Nutrizione e Allenamento integrati in un unico ecosistema per garantirti continuità di risultati a 360 gradi. Tutto in sinergia, in un ambiente esclusivo e riservato.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Come funziona la prima visita?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">La prima visita è una <strong>Valutazione Iniziale</strong> approfondita. Ascoltiamo la tua storia clinica, eseguiamo test posturali e funzionali, decidiamo insieme a te gli obiettivi da raggiungere. Da lì costruiamo insieme un piano estremamente personalizzato. Dura circa <strong>90 minuti</strong>.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Posso allenarmi anche se ho dolori cronici e problemi alla schiena?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner"><strong>Assolutamente sì</strong>, anzi: il nostro metodo è pensato proprio per chi ha dolori cronici o problematiche muscolo-scheletriche. Prima sblocchiamo il corpo con l'osteopatia, poi costruiamo un programma di movimento che rispetta i tuoi limiti e li supera in sicurezza. Zero improvvisazione, supervisione costante.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">L'ambiente è davvero diverso da una palestra commerciale?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">Sì. Areté è uno <strong>studio privato</strong>, non una palestra. Niente musica alta, niente folla, niente caos. Le sessioni sono individuali, in uno spazio curato e silenzioso, con un esperto sempre al tuo fianco. È pensato per chi ha superato i 40 anni e cerca serietà e risultati.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Offrite anche consulenze online?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">Sì. Per quanto riguarda l'<strong>allenamento e la nutrizione</strong>, offriamo accompagnamento online con programmazione personalizzata, monitoraggio costante e aggiustamenti continui. L'osteopatia, invece, richiede la presenza in studio. Tuttavia seguiamo con successo, a distanza, persone con mal di schiena e altri dolori, grazie ad un percorso basato sulla terapia attiva.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">L'osteopatia è coperta dal SSN?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">L'osteopatia <strong>non è coperta dal SSN</strong>, ma molte assicurazioni sanitarie integrative e fondi sanitari rimborsano le sedute. Forniamo regolare fattura sanitaria detraibile dalla dichiarazione dei redditi. Verifica con la tua assicurazione le condizioni di rimborso.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Devo seguire l'intero percorso integrato o posso scegliere una sola disciplina?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">Puoi accedere anche a una sola disciplina. Tuttavia, il <strong>massimo dei risultati</strong> si ottiene con il percorso integrato, perché ogni pilastro potenzia gli altri. Durante la prima valutazione capiamo insieme qual è la soluzione migliore per te.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Dove si trova lo studio? È facile da raggiungere da Milano?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">Siamo a <strong>Segrate, in via Conte Suardi 49</strong>, alle porte di Milano. Facilmente raggiungibile in auto (tangenziale Est) e con i mezzi pubblici. Trovi indicazioni dettagliate e Google Maps nella <a href="/contatti/" style="color:var(--green);font-weight:700;cursor:pointer;text-decoration:underline">pagina Contatti</a>.</div></div></div>
-                <div class="faq-item reveal"><div class="faq-question" onclick="toggleFaq(this)"><div class="faq-q-text">Quali sono gli orari di apertura?</div><div class="faq-toggle"></div></div><div class="faq-answer"><div class="faq-answer-inner">Lavoriamo <strong>su appuntamento</strong>, dal lunedì al venerdì dalle 7:00 alle 22:00, e il sabato dalle 8:00 alle 13:00. Orari pensati per chi lavora: puoi venire prima dell'ufficio o dopo il lavoro senza correre.</div></div></div>
+    <main id="main">
+        <section class="phero" data-theme="light">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal="up">Domande frequenti</p>
+                <h1 class="phero-title display" data-reveal="lines"><span class="ln"><span>Tutto ciò che</span></span><span class="ln"><span>vuoi <em>sapere</em></span></span></h1>
+                <div class="phero-meta" data-reveal="up">
+                    <p class="phero-lead">Le risposte alle domande più comuni sul metodo Areté. Non trovi la tua? <a href="/contatti/">Scrivici</a>.</p>
+                    <a href="/contatti/" class="pill">Prenota la valutazione gratuita</a>
+                </div>
             </div>
         </section>
 
-        <div class="cta-banner">
-            <div class="cta-banner-bg" style="background:url('/img/palestra-sala-vista.jpg') center/cover no-repeat"></div>
-            <div class="cta-banner-overlay"></div>
-            <div class="cta-banner-content reveal">
-                <div class="section-label" style="text-align:center;color:var(--gold)">Hai altre domande?</div>
-                <h2 class="section-title" style="text-align:center;color:var(--cream)">Parliamone <em style="color:var(--gold)">insieme</em></h2>
-                <p class="section-desc" style="text-align:center;color:rgba(250,248,244,.6);margin:0 auto 2rem;max-width:480px">Scrivici su WhatsApp o prenota una chiamata conoscitiva gratuita.</p>
-                <div class="cta-btns">
-                    <a href="/contatti/" class="btn btn-gold">Contattaci</a>
-                    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!%20Vorrei%20informazioni.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn btn-outline-light">WhatsApp</a>
+        <section class="sec dark curve" data-theme="dark" style="--z:2">
+            <div class="wrap">
+                <div class="faq-list" data-reveal="stagger">
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Cosa rende il metodo Areté diverso dagli altri?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>La differenza è l'<strong>integrazione reale</strong> tra le tre discipline. Non riceverai consigli isolati: osteopata e nutrizionista lavorano insieme su un unico piano costruito intorno a te. Osteopatia, Nutrizione e Allenamento integrati in un unico ecosistema per garantirti continuità di risultati a 360 gradi. Tutto in sinergia, in un ambiente esclusivo e riservato.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Come funziona la prima visita?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>La prima visita è una <strong>Valutazione Iniziale</strong> approfondita. Ascoltiamo la tua storia clinica, eseguiamo test posturali e funzionali, decidiamo insieme a te gli obiettivi da raggiungere. Da lì costruiamo insieme un piano estremamente personalizzato. Dura circa <strong>90 minuti</strong>.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Posso allenarmi anche se ho dolori cronici e problemi alla schiena?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p><strong>Assolutamente sì</strong>, anzi: il nostro metodo è pensato proprio per chi ha dolori cronici o problematiche muscolo-scheletriche. Prima sblocchiamo il corpo con l'osteopatia, poi costruiamo un programma di movimento che rispetta i tuoi limiti e li supera in sicurezza. Zero improvvisazione, supervisione costante.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>L'ambiente è davvero diverso da una palestra commerciale?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Sì. Areté è uno <strong>studio privato</strong>, non una palestra. Niente musica alta, niente folla, niente caos. Le sessioni sono individuali, in uno spazio curato e silenzioso, con un esperto sempre al tuo fianco. È pensato per chi ha superato i 40 anni e cerca serietà e risultati.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Offrite anche consulenze online?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Sì. Per quanto riguarda l'<strong>allenamento e la nutrizione</strong>, offriamo accompagnamento online con programmazione personalizzata, monitoraggio costante e aggiustamenti continui. L'osteopatia, invece, richiede la presenza in studio. Tuttavia seguiamo con successo, a distanza, persone con mal di schiena e altri dolori, grazie ad un percorso basato sulla terapia attiva.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>L'osteopatia è coperta dal SSN?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>L'osteopatia <strong>non è coperta dal SSN</strong>, ma molte assicurazioni sanitarie integrative e fondi sanitari rimborsano le sedute. Forniamo regolare fattura sanitaria detraibile dalla dichiarazione dei redditi. Verifica con la tua assicurazione le condizioni di rimborso.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Devo seguire l'intero percorso integrato o posso scegliere una sola disciplina?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Puoi accedere anche a una sola disciplina. Tuttavia, il <strong>massimo dei risultati</strong> si ottiene con il percorso integrato, perché ogni pilastro potenzia gli altri. Durante la prima valutazione capiamo insieme qual è la soluzione migliore per te.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Dove si trova lo studio? È facile da raggiungere da Milano?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Siamo a <strong>Segrate, in via Conte Suardi 49</strong>, alle porte di Milano. Facilmente raggiungibile in auto (tangenziale Est) e con i mezzi pubblici. Trovi indicazioni dettagliate e Google Maps nella <a href="/contatti/">pagina Contatti</a>.</p></div></div></div>
+                    <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Quali sono gli orari di apertura?</span><span class="faq-ic" aria-hidden="true"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Lavoriamo <strong>su appuntamento</strong>, dal lunedì al venerdì dalle 7:00 alle 22:00, e il sabato dalle 8:00 alle 13:00. Orari pensati per chi lavora: puoi venire prima dell'ufficio o dopo il lavoro senza correre.</p></div></div></div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="sec curve pend" data-theme="light" style="--z:3">
+        <div class="marquee" aria-hidden="true"><div class="mq-track"><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div></div></div>
+            <div class="wrap pend-in">
+                <p class="eyebrow" data-reveal="up">Hai altre domande?</p>
+                <p class="pend-quote display" data-reveal="up">Parliamone <em>insieme</em>.</p>
+                <div class="pend-cta" data-reveal="up">
+                    <div><p>Scrivici su WhatsApp o prenota una chiamata conoscitiva gratuita.</p></div>
+                    <div class="pend-btns"><a href="/contatti/" class="pill">Contattaci</a><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!%20Vorrei%20informazioni.&amp;type=phone_number&amp;app_absent=0" class="pill pill--ghost" target="_blank" rel="noopener">WhatsApp</a></div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand-area">
-                <div class="footer-logo">ARET<span>É</span></div>
-                <p>Il metodo integrato che unisce Osteopatia, Nutrizione e Allenamento in un unico percorso esclusivo a Segrate, alle porte di Milano.</p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-ig"/></svg></a>
-                    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#ic-wa"/></svg></a>
-                    <a href="tel:+393517005245" aria-label="Telefono"><svg><use href="#ic-phone"/></svg></a>
+    <!-- FOOTER -->
+    <footer class="footer curve" data-theme="dark" style="--z:20">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h4>Pagine</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/osteopatia/">Osteopatia</a></li>
+                        <li><a href="/nutrizione/">Nutrizione</a></li>
+                        <li><a href="/allenamento/">Allenamento</a></li>
+                        <li><a href="/chi-siamo/">Chi siamo</a></li>
+                        <li><a href="/faq/">Domande frequenti</a></li>
+                        <li><a href="/contatti/">Contatti</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Orari, su appuntamento</h4>
+                    <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                    <h4>Studio</h4>
+                    <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                </div>
+                <div>
+                    <h4>Seguici e scrivici</h4>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                        <li><a href="tel:+393517005245"><svg aria-hidden="true"><use href="#ic-phone"/></svg>351 700 5245</a></li>
+                        <li><a href="mailto:aretesegrate@gmail.com"><svg aria-hidden="true"><use href="#ic-mail"/></svg>aretesegrate@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-section">
-                <h4>Navigazione</h4>
-                <ul class="footer-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/osteopatia/">Osteopatia</a></li>
-                    <li><a href="/nutrizione/">Nutrizione</a></li>
-                    <li><a href="/allenamento/">Allenamento</a></li>
-                    <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                    <li><a href="/contatti/">Contatti</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Patologie Trattate</h4>
-                <ul class="footer-links">
-                    <li><a href="/osteopatia/">Mal di schiena</a></li>
-                    <li><a href="/osteopatia/">Cervicalgia</a></li>
-                    <li><a href="/osteopatia/">Sciatalgia</a></li>
-                    <li><a href="/osteopatia/">Gonalgia</a></li>
-                    <li><a href="/osteopatia/">Postura</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contatti</h4>
-                <div class="footer-ci"><svg><use href="#ic-pin"/></svg><div class="footer-ci-content"><strong>Studio Areté</strong>Via Conte Suardi 49<br>20090 Segrate (MI)</div></div>
-                <div class="footer-ci"><svg><use href="#ic-clock"/></svg><div class="footer-ci-content">Lun-Ven 7:00-22:00<br>Sab 8:00-13:00<br><em style="font-size:.75rem;opacity:.7">Su appuntamento</em></div></div>
-                <div class="footer-ci"><svg><use href="#ic-phone"/></svg><div class="footer-ci-content"><a href="tel:+393517005245">351 700 5245</a> · Santiago<br><a href="tel:+393665339627">366 533 9627</a> · Ivan</div></div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copy">© 2026 Areté, Osteopatia, Nutrizione e Allenamento · Segrate (Milano)</div>
-            <div class="footer-legal" style="margin-top:.6rem;font-size:.82rem">
-                <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Privacy Policy</a>
-                <span style="color:rgba(250,248,244,.25)">·</span>
-                <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Cookie Policy</a>
+            <div class="footer-bottom">
+                <small>© 2026 Areté, osteopatia, nutrizione e allenamento · Segrate (Milano)</small>
+                <span>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+                </span>
             </div>
         </div>
         <script type="text/javascript">(function (w,d){var loader=function(){var s=d.createElement("script"),tag=d.getElementsByTagName("script")[0];s.src="https://cdn.iubenda.com/iubenda.js";tag.parentNode.insertBefore(s,tag);};if(w.addEventListener){w.addEventListener("load",loader,false);}else if(w.attachEvent){w.attachEvent("onload",loader);}else{w.onload=loader;}})(window,document);</script>
     </footer>
 
+    <!-- MENU A TENDINA -->
+    <div class="bmenu" id="bmenu" aria-hidden="true" aria-label="Menu">
+        <div class="bmenu-cols">
+            <a class="mcol" href="/osteopatia/" style="--i:0"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Osteopatia</span></a>
+            <a class="mcol" href="/nutrizione/" style="--i:1"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Nutrizione</span></a>
+            <a class="mcol" href="/allenamento/" style="--i:2"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Allenamento</span></a>
+            <a class="mcol" href="/chi-siamo/" style="--i:3"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Chi siamo</span></a>
+            <a class="mcol" href="/faq/" aria-current="page" style="--i:4"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">FAQ</span></a>
+            <a class="mcol" href="/contatti/" style="--i:5"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Contatti</span></a>
+            <div class="mcol mcol--info">
+                <h5>Scrivici</h5>
+                <p><a href="mailto:aretesegrate@gmail.com">aretesegrate@gmail.com</a><br><a href="tel:+393517005245">351 700 5245</a>, Santiago<br><a href="tel:+393665339627">366 533 9627</a>, Ivan</p>
+                <h5>Dove siamo</h5>
+                <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                <h5>Orari, su appuntamento</h5>
+                <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                <h5>Seguici</h5>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="/js/app.js" defer></script>
+    <script src="/js/home.js" defer></script>
 </body>
 </html>

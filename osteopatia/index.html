@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(d){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r){d.documentElement.classList.add('anim');setTimeout(function(){if(!window.gsap||!window.ScrollTrigger){d.documentElement.classList.remove('anim');}},3500);}})(document);</script>
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="ZoJkcSR2dGacZYsG0x8IwwIzmcoqwtP5UBdC-SM7An4" />
 
     <!-- ══════════════════════ iubenda · Cookie Solution ══════════════════════ -->
     <script type="text/javascript" src="https://embeds.iubenda.com/widgets/842d254e-97e4-49e7-a8ac-940b2ba4cbfd.js"></script>
+    <!-- ══════════ Meta Pixel (attivato da iubenda solo dopo consenso marketing) ══════════ -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2493718584485626');
+    fbq('track','PageView');
+    </script>
 
     <!-- ══════════════════════ SEO PRIMARIO ══════════════════════ -->
     <title>Osteopata a Segrate (Milano) | Areté</title>
@@ -53,7 +60,7 @@
     <!-- ══════════════════════ FONTS ══════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ══════════════════════ DATI STRUTTURATI (JSON-LD) ══════════════════════ -->
     <script type="application/ld+json">
@@ -71,6 +78,7 @@
       ],
       "priceRange": "€€",
       "telephone": "+39 351 700 5245",
+      "email": "aretesegrate@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Conte Suardi 49",
@@ -128,7 +136,8 @@
     }
     </script>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 <body>
     <svg style="display:none">
@@ -152,150 +161,164 @@
         <symbol id="ic-users" viewBox="0 0 24 24"><path d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73L18 18H6l.01-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.6-.91 4.23-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58A2.01 2.01 0 0 0 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></symbol>
         <symbol id="ic-puzzle" viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2V10.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7s2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></symbol>
         <symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 2L9.91 8.84 3 9.27l5.45 4.73L6.82 21 12 17.27 17.18 21l-1.64-7.03L21 9.27l-6.91-.43L12 2z"/></symbol>
+        <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></symbol>
+        <symbol id="ic-arrow-down" viewBox="0 0 24 24"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></symbol>
     </svg>
 
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a class="nav-brand" href="/" aria-label="Areté, torna alla home">
-                <span class="nav-brand-text">Aret<span>é</span></span>
-                <span class="nav-brand-dot"></span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/osteopatia/" class="active">Osteopatia</a></li>
-                <li><a href="/nutrizione/">Nutrizione</a></li>
-                <li><a href="/allenamento/">Allenamento</a></li>
-                <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                <li><a href="/faq/">FAQ</a></li>
-                <li><a href="/contatti/" class="nav-cta">Prenota</a></li>
-            </ul>
-            <div class="mob-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Apri menu" role="button" tabindex="0">
-                <span></span><span></span><span></span>
+    <a class="skip" href="#main">Vai al contenuto</a>
+
+    <!-- NAV -->
+    <nav class="bnav" id="nav" data-theme="light" aria-label="Principale">
+        <div class="bnav-in">
+            <a href="/" class="logo" aria-label="Areté, torna alla home">ARET<span class="e">É</span><span class="dot" aria-hidden="true"></span></a>
+            <div class="bnav-right">
+                <a href="/contatti/" class="pill pill--nav">Prenota</a>
+                <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="bmenu">
+                    <span class="roll"><span>Menu</span><span>Chiudi</span></span>
+                    <span class="burger" aria-hidden="true"><i></i><i></i></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!%20Vorrei%20informazioni%20sul%20percorso%20Aret%C3%A9.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float" aria-label="Scrivici su WhatsApp">
-        <svg><use href="#ic-wa"/></svg>
-        <div class="wa-tooltip">Scrivici su WhatsApp</div>
-    </a>
-
-    <main class="page" id="osteopatia">
-        <section class="discipline-hero">
-            <div class="discipline-hero-bg"><img src="/img/osteopatia-lettino-postazione.jpg" alt="Osteopata a Segrate, sala trattamenti dello studio Areté" loading="lazy"></div>
-            <div class="discipline-hero-overlay"></div>
-            <div class="discipline-hero-content">
-                <div class="section-label">Pilastro 01 · Il Metodo Areté</div>
-                <h1>Osteopata a Segrate:<br>risolvere la <em>causa,</em><br>non solo il sintomo.</h1>
-                <h2>L'approccio osteopatico di Areté per ristabilire l'equilibrio biomeccanico perduto e ripristinare la libertà di movimento.</h2>
+    <main id="main">
+        <section class="phero" data-theme="light">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal="up">Il metodo Areté · Osteopatia</p>
+                <h1 class="phero-title phero-title--long display" data-reveal="lines"><span class="ln"><span>Osteopata a Segrate:</span></span><span class="ln"><span>risolvere la <em>causa</em>,</span></span><span class="ln"><span>non solo il sintomo.</span></span></h1>
+                <div class="phero-meta" data-reveal="up">
+                    <p class="phero-lead">L'approccio osteopatico di Areté per ristabilire l'equilibrio biomeccanico perduto e ripristinare la libertà di movimento.</p>
+                    <a href="/contatti/" class="pill">Prenota la valutazione gratuita</a>
+                </div>
+                <div class="phero-img" data-reveal="img"><img src="/img/osteopatia-lettino-postazione.jpg" alt="Osteopata a Segrate, sala trattamenti dello studio Areté" width="1600" height="1200" fetchpriority="high"></div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="discipline-content-grid">
-                <div class="discipline-img reveal"><img src="/img/studio-osteopatia-postazione.jpg" alt="Postazione di valutazione osteopatica con modelli anatomici, Areté Segrate" loading="lazy" width="1200" height="1600"></div>
-                <div class="discipline-text reveal">
-                    <div class="section-label">L'approccio Osteopatico</div>
-                    <h3>Risolvere la <em>causa,</em> non solo il sintomo</h3>
-                    <p>Che si tratti di un <strong>mal di schiena</strong> o di un <strong>dolore cervicale</strong>, l'approccio osteopatico di Areté mira a ristabilire l'equilibrio biomeccanico che il corpo ha perso a causa di <strong>stress e posture mantenute a lungo</strong>.</p>
-                    <p>Attraverso la <strong>terapia manuale</strong> agiamo direttamente sulla causa del dolore, non soltanto sul sintomo, favorendone l'eliminazione e ripristinando la libertà di movimento perduta.</p>
-                    <p>I tre pilastri fondamentali su cui agiamo durante il trattamento osteopatico sono:</p>
-                    <div class="benefits-list">
-                        <div class="benefit-item"><div class="benefit-num">01</div><div class="benefit-content"><strong>Respirazione</strong><span>Per ripristinare equilibrio e migliorare la gestione dello stress.</span></div></div>
-                        <div class="benefit-item"><div class="benefit-num">02</div><div class="benefit-content"><strong>Mobilità articolare funzionale</strong><span>Per eliminare i compensi che causano dolori e infortuni ricorrenti.</span></div></div>
-                        <div class="benefit-item"><div class="benefit-num">03</div><div class="benefit-content"><strong>Postura e catene muscolari profonde</strong><span>Ottimizzazione della postura e riequilibrio delle catene muscolari profonde.</span></div></div>
+        <section class="sec dark curve" data-theme="dark" style="--z:2">
+            <div class="wrap split">
+                <div class="split-img" data-reveal="img"><img src="/img/studio-osteopatia-postazione.jpg" alt="Postazione di valutazione osteopatica con modelli anatomici, Areté Segrate" loading="lazy" width="1200" height="1600"></div>
+                <div class="prose">
+                    <p class="eyebrow" data-reveal="up">L'approccio osteopatico</p>
+                    <h2 class="h3d display" data-reveal="lines"><span class="ln"><span>Risolvere la <em>causa</em>,</span></span><span class="ln"><span>non solo il sintomo</span></span></h2>
+                    <div data-reveal="up">
+                        <p>Che si tratti di un <strong>mal di schiena</strong> o di un <strong>dolore cervicale</strong>, l'approccio osteopatico di Areté mira a ristabilire l'equilibrio biomeccanico che il corpo ha perso a causa di <strong>stress e posture mantenute a lungo</strong>.</p>
+                        <p>Attraverso la <strong>terapia manuale</strong> agiamo direttamente sulla causa del dolore, non soltanto sul sintomo, favorendone l'eliminazione e ripristinando la libertà di movimento perduta.</p>
+                        <p>I tre pilastri fondamentali su cui agiamo durante il trattamento osteopatico sono:</p>
                     </div>
-                    <p>In Areté <strong>l'osteopatia è il mezzo, non il fine</strong>. Dopo i trattamenti osteopatici sarai in grado di tornare a muoverti liberamente e senza dolori, così da poter ricreare le fondamenta di un corpo forte, stabile e in salute attraverso l'allenamento personalizzato.</p>
-                    <p>Non solo eliminerai i dolori, ma <strong>preverrai attivamente la loro ricomparsa nel tempo</strong>.</p>
+                    <ul class="rows" data-reveal="stagger">
+                        <li><strong>Respirazione</strong><span>Per ripristinare equilibrio e migliorare la gestione dello stress.</span></li>
+                        <li><strong>Mobilità articolare funzionale</strong><span>Per eliminare i compensi che causano dolori e infortuni ricorrenti.</span></li>
+                        <li><strong>Postura e catene muscolari profonde</strong><span>Ottimizzazione della postura e riequilibrio delle catene muscolari profonde.</span></li>
+                    </ul>
+                    <div data-reveal="up">
+                        <p>In Areté <strong>l'osteopatia è il mezzo, non il fine</strong>. Dopo i trattamenti osteopatici sarai in grado di tornare a muoverti liberamente e senza dolori, così da poter ricreare le fondamenta di un corpo forte, stabile e in salute attraverso l'allenamento personalizzato.</p>
+                        <p>Non solo eliminerai i dolori, ma <strong>preverrai attivamente la loro ricomparsa nel tempo</strong>.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="warm-section">
-            <div class="section">
-                <div class="reveal" style="text-align:center;margin-bottom:3rem">
-                    <div class="section-label" style="text-align:center">Principali Patologie Trattate</div>
-                    <h2 class="section-title" style="text-align:center">Come possiamo <em>aiutarti</em></h2>
+        <section class="sec curve" data-theme="light" style="--z:3">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="eyebrow" data-reveal="up">Principali patologie trattate</p>
+                    <h2 class="h2 display" data-reveal="lines"><span class="ln"><span>Come possiamo</span></span><span class="ln"><span><em>aiutarti</em></span></span></h2>
                 </div>
-                <div class="services-grid">
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-body"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Mal di schiena</h3><p>Trattamento delle lombalgie acute e croniche con tecniche manuali mirate ed esercizi di prevenzione.</p></div>
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-body"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Cervicalgia</h3><p>Risoluzione di dolori cervicali, tensioni muscolari e rigidità del collo, anche da postura da scrivania.</p></div>
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-body"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Sciatalgia</h3><p>Trattamento del dolore sciatico attraverso tecniche osteopatiche e mobilizzazione specifica.</p></div>
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-body"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Gonalgia</h3><p>Trattamento del dolore alle ginocchia e delle problematiche articolari dell'arto inferiore.</p></div>
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-target"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Postura</h3><p>Valutazione posturale completa e percorso di miglioramento con trattamento e movimento.</p></div>
-                    <div class="service-card reveal"><div class="service-icon"><svg><use href="#ic-fitness"/></svg></div><h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem">Performance sportive</h3><p>Ottimizzazione della performance atletica e prevenzione degli infortuni.</p></div>
+                <div class="cards" data-reveal="stagger">
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-body"/></svg></div><h3>Mal di schiena</h3><p>Trattamento delle lombalgie acute e croniche con tecniche manuali mirate ed esercizi di prevenzione.</p></article>
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-body"/></svg></div><h3>Cervicalgia</h3><p>Risoluzione di dolori cervicali, tensioni muscolari e rigidità del collo, anche da postura da scrivania.</p></article>
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-body"/></svg></div><h3>Sciatalgia</h3><p>Trattamento del dolore sciatico attraverso tecniche osteopatiche e mobilizzazione specifica.</p></article>
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-body"/></svg></div><h3>Gonalgia</h3><p>Trattamento del dolore alle ginocchia e delle problematiche articolari dell'arto inferiore.</p></article>
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-target"/></svg></div><h3>Postura</h3><p>Valutazione posturale completa e percorso di miglioramento con trattamento e movimento.</p></article>
+                    <article class="card"><div class="card-ic"><svg aria-hidden="true"><use href="#ic-fitness"/></svg></div><h3>Performance sportive</h3><p>Ottimizzazione della performance atletica e prevenzione degli infortuni.</p></article>
                 </div>
             </div>
         </section>
 
-        <div class="quote-section">
-            <div class="quote-section-text">Unire <span>terapia manuale ed esercizio fisico adattato</span> è il metodo più potente per eliminare i dolori in modo permanente.</div>
-            <div class="quote-section-author">· Il Metodo Areté</div>
-        </div>
-
-        <div class="cta-banner">
-            <div class="cta-banner-bg" style="background:url('/img/osteopatia-sala-ampia.jpg') center/cover no-repeat"></div>
-            <div class="cta-banner-overlay"></div>
-            <div class="cta-banner-content reveal">
-                <div class="section-label" style="text-align:center;color:var(--gold)">Prenota</div>
-                <h2 class="section-title" style="text-align:center;color:var(--cream)">Prenota la <em style="color:var(--gold)">tua Valutazione Iniziale</em></h2>
-                <p class="section-desc" style="text-align:center;color:rgba(250,248,244,.6);margin:0 auto 2rem;max-width:480px">Nello studio di Segrate, alle porte di Milano. Adulti e bambini.</p>
-                <div class="cta-btns"><a href="/contatti/" class="btn btn-gold">Prenota la tua Valutazione Iniziale</a></div>
+        <section class="sec dark curve pend" data-theme="dark" style="--z:4">
+        <div class="marquee" aria-hidden="true"><div class="mq-track"><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div></div></div>
+            <div class="wrap pend-in">
+                <p class="eyebrow" data-reveal="up">Il metodo Areté</p>
+                <p class="pend-quote display" data-reveal="up">Unire <em>terapia manuale ed esercizio fisico adattato</em> è il metodo più potente per eliminare i dolori in modo permanente.</p>
+                <div class="pend-cta" data-reveal="up">
+                    <div><h2 class="display">Prenota la tua valutazione iniziale</h2><p>Nello studio di Segrate, alle porte di Milano. Adulti e bambini.</p></div>
+                    <div class="pend-btns"><a href="/contatti/" class="pill">Prenota la valutazione gratuita</a></div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand-area">
-                <div class="footer-logo">ARET<span>É</span></div>
-                <p>Il metodo integrato che unisce Osteopatia, Nutrizione e Allenamento in un unico percorso esclusivo a Segrate, alle porte di Milano.</p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-ig"/></svg></a>
-                    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#ic-wa"/></svg></a>
-                    <a href="tel:+393517005245" aria-label="Telefono"><svg><use href="#ic-phone"/></svg></a>
+    <!-- FOOTER -->
+    <footer class="footer" data-theme="dark">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h4>Pagine</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/osteopatia/">Osteopatia</a></li>
+                        <li><a href="/nutrizione/">Nutrizione</a></li>
+                        <li><a href="/allenamento/">Allenamento</a></li>
+                        <li><a href="/chi-siamo/">Chi siamo</a></li>
+                        <li><a href="/faq/">Domande frequenti</a></li>
+                        <li><a href="/contatti/">Contatti</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Orari, su appuntamento</h4>
+                    <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                    <h4>Studio</h4>
+                    <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                </div>
+                <div>
+                    <h4>Seguici e scrivici</h4>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                        <li><a href="tel:+393517005245"><svg aria-hidden="true"><use href="#ic-phone"/></svg>351 700 5245</a></li>
+                        <li><a href="mailto:aretesegrate@gmail.com"><svg aria-hidden="true"><use href="#ic-mail"/></svg>aretesegrate@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-section">
-                <h4>Navigazione</h4>
-                <ul class="footer-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/osteopatia/">Osteopatia</a></li>
-                    <li><a href="/nutrizione/">Nutrizione</a></li>
-                    <li><a href="/allenamento/">Allenamento</a></li>
-                    <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                    <li><a href="/contatti/">Contatti</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Patologie Trattate</h4>
-                <ul class="footer-links">
-                    <li><a href="/osteopatia/">Mal di schiena</a></li>
-                    <li><a href="/osteopatia/">Cervicalgia</a></li>
-                    <li><a href="/osteopatia/">Sciatalgia</a></li>
-                    <li><a href="/osteopatia/">Gonalgia</a></li>
-                    <li><a href="/osteopatia/">Postura</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contatti</h4>
-                <div class="footer-ci"><svg><use href="#ic-pin"/></svg><div class="footer-ci-content"><strong>Studio Areté</strong>Via Conte Suardi 49<br>20090 Segrate (MI)</div></div>
-                <div class="footer-ci"><svg><use href="#ic-clock"/></svg><div class="footer-ci-content">Lun-Ven 7:00-22:00<br>Sab 8:00-13:00<br><em style="font-size:.75rem;opacity:.7">Su appuntamento</em></div></div>
-                <div class="footer-ci"><svg><use href="#ic-phone"/></svg><div class="footer-ci-content"><a href="tel:+393517005245">351 700 5245</a> · Santiago<br><a href="tel:+393665339627">366 533 9627</a> · Ivan</div></div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copy">© 2026 Areté, Osteopatia, Nutrizione e Allenamento · Segrate (Milano)</div>
-            <div class="footer-legal" style="margin-top:.6rem;font-size:.82rem">
-                <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Privacy Policy</a>
-                <span style="color:rgba(250,248,244,.25)">·</span>
-                <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Cookie Policy</a>
+            <div class="footer-bottom">
+                <small>© 2026 Areté, osteopatia, nutrizione e allenamento · Segrate (Milano)</small>
+                <span>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+                </span>
             </div>
         </div>
         <script type="text/javascript">(function (w,d){var loader=function(){var s=d.createElement("script"),tag=d.getElementsByTagName("script")[0];s.src="https://cdn.iubenda.com/iubenda.js";tag.parentNode.insertBefore(s,tag);};if(w.addEventListener){w.addEventListener("load",loader,false);}else if(w.attachEvent){w.attachEvent("onload",loader);}else{w.onload=loader;}})(window,document);</script>
     </footer>
 
+    <!-- MENU A TENDINA -->
+    <div class="bmenu" id="bmenu" aria-hidden="true" aria-label="Menu">
+        <div class="bmenu-cols">
+            <a class="mcol" href="/osteopatia/" aria-current="page" style="--i:0"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Osteopatia</span></a>
+            <a class="mcol" href="/nutrizione/" style="--i:1"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Nutrizione</span></a>
+            <a class="mcol" href="/allenamento/" style="--i:2"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Allenamento</span></a>
+            <a class="mcol" href="/chi-siamo/" style="--i:3"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Chi siamo</span></a>
+            <a class="mcol" href="/faq/" style="--i:4"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">FAQ</span></a>
+            <a class="mcol" href="/contatti/" style="--i:5"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Contatti</span></a>
+            <div class="mcol mcol--info">
+                <h5>Scrivici</h5>
+                <p><a href="mailto:aretesegrate@gmail.com">aretesegrate@gmail.com</a><br><a href="tel:+393517005245">351 700 5245</a>, Santiago<br><a href="tel:+393665339627">366 533 9627</a>, Ivan</p>
+                <h5>Dove siamo</h5>
+                <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                <h5>Orari, su appuntamento</h5>
+                <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                <h5>Seguici</h5>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="/js/app.js" defer></script>
+    <script src="/js/home.js" defer></script>
 </body>
 </html>

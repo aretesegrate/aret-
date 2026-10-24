@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(d){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r){d.documentElement.classList.add('anim');setTimeout(function(){if(!window.gsap||!window.ScrollTrigger){d.documentElement.classList.remove('anim');}},3500);}})(document);</script>
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="ZoJkcSR2dGacZYsG0x8IwwIzmcoqwtP5UBdC-SM7An4" />
 
     <!-- ══════════════════════ iubenda · Cookie Solution ══════════════════════ -->
     <script type="text/javascript" src="https://embeds.iubenda.com/widgets/842d254e-97e4-49e7-a8ac-940b2ba4cbfd.js"></script>
+    <!-- ══════════ Meta Pixel (attivato da iubenda solo dopo consenso marketing) ══════════ -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2493718584485626');
+    fbq('track','PageView');
+    </script>
 
     <!-- ══════════════════════ SEO PRIMARIO ══════════════════════ -->
     <title>Contatti e Prenotazioni | Areté, Segrate (Milano)</title>
@@ -53,7 +60,7 @@
     <!-- ══════════════════════ FONTS ══════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ══════════════════════ DATI STRUTTURATI (JSON-LD) ══════════════════════ -->
     <script type="application/ld+json">
@@ -71,6 +78,7 @@
       ],
       "priceRange": "€€",
       "telephone": "+39 351 700 5245",
+      "email": "aretesegrate@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Conte Suardi 49",
@@ -128,7 +136,8 @@
     }
     </script>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/pages.css">
 </head>
 <body>
     <svg style="display:none">
@@ -152,176 +161,179 @@
         <symbol id="ic-users" viewBox="0 0 24 24"><path d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73L18 18H6l.01-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.6-.91 4.23-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58A2.01 2.01 0 0 0 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></symbol>
         <symbol id="ic-puzzle" viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2V10.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7s2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></symbol>
         <symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 2L9.91 8.84 3 9.27l5.45 4.73L6.82 21 12 17.27 17.18 21l-1.64-7.03L21 9.27l-6.91-.43L12 2z"/></symbol>
+        <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></symbol>
+        <symbol id="ic-arrow-down" viewBox="0 0 24 24"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></symbol>
     </svg>
 
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a class="nav-brand" href="/" aria-label="Areté, torna alla home">
-                <span class="nav-brand-text">Aret<span>é</span></span>
-                <span class="nav-brand-dot"></span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/osteopatia/">Osteopatia</a></li>
-                <li><a href="/nutrizione/">Nutrizione</a></li>
-                <li><a href="/allenamento/">Allenamento</a></li>
-                <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                <li><a href="/faq/">FAQ</a></li>
-                <li><a href="/contatti/" class="nav-cta active">Prenota</a></li>
-            </ul>
-            <div class="mob-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Apri menu" role="button" tabindex="0">
-                <span></span><span></span><span></span>
+    <a class="skip" href="#main">Vai al contenuto</a>
+
+    <!-- NAV -->
+    <nav class="bnav" id="nav" data-theme="light" aria-label="Principale">
+        <div class="bnav-in">
+            <a href="/" class="logo" aria-label="Areté, torna alla home">ARET<span class="e">É</span><span class="dot" aria-hidden="true"></span></a>
+            <div class="bnav-right">
+                <a href="#prenota" class="pill pill--nav">Prenota</a>
+                <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="bmenu">
+                    <span class="roll"><span>Menu</span><span>Chiudi</span></span>
+                    <span class="burger" aria-hidden="true"><i></i><i></i></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!%20Vorrei%20informazioni%20sul%20percorso%20Aret%C3%A9.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float" aria-label="Scrivici su WhatsApp">
-        <svg><use href="#ic-wa"/></svg>
-        <div class="wa-tooltip">Scrivici su WhatsApp</div>
-    </a>
-
-    <main class="page" id="contatti">
-        <section class="contatti-hero">
-            <div class="contatti-hero-bg"></div>
-            <div class="contatti-hero-overlay"></div>
-            <div class="contatti-content">
-                <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
-                    <div class="section-label" style="text-align:center;color:var(--gold)">Contatti</div>
-                    <h1 class="section-title" style="text-align:center;color:var(--cream)">Inizia il tuo percorso <em style="color:var(--gold)">Areté</em></h1>
-                    <p class="section-desc" style="text-align:center;color:rgba(250,248,244,.6);margin:0 auto">Compila il modulo o scrivici. Ti ricontatteremo per una consulenza conoscitiva gratuita.</p>
-                </div>
-                <div class="contatti-grid">
-                    <div class="contatti-info reveal">
-                        <h3>Parliamone</h3>
-                        <p>Raccontaci il tuo obiettivo e ti aiuteremo a capire quale percorso è più adatto a te. La prima consulenza è gratuita.</p>
-                        <div class="contatti-detail"><svg><use href="#ic-pin"/></svg><div class="contatti-detail-content"><strong>Indirizzo</strong><span>Via Conte Suardi 49<br>20090 Segrate (MI)</span></div></div>
-                        <div class="contatti-detail"><svg><use href="#ic-clock"/></svg><div class="contatti-detail-content"><strong>Orari · Su appuntamento</strong><span>Lun-Ven: 7:00-22:00<br>Sabato: 8:00-13:00</span></div></div>
-                        <div class="contatti-detail"><svg><use href="#ic-phone"/></svg><div class="contatti-detail-content"><strong>Santiago Mencarelli · Osteopata &amp; Trainer</strong><a href="tel:+393517005245">351 700 5245</a></div></div>
-                        <div class="contatti-detail"><svg><use href="#ic-phone"/></svg><div class="contatti-detail-content"><strong>Ivan Savaris · Biologo Nutrizionista &amp; Trainer</strong><a href="tel:+393665339627">366 533 9627</a></div></div>
-                        <div class="contatti-detail"><svg><use href="#ic-wa"/></svg><div class="contatti-detail-content"><strong>WhatsApp</strong><a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!%20Vorrei%20informazioni.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Scrivici subito</a></div></div>
-                        <div class="contatti-detail"><svg><use href="#ic-ig"/></svg><div class="contatti-detail-content"><strong>Instagram</strong><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener">@dr.mencarelli_osteopata</a></div></div>
-                    </div>
-                    <div class="form-box reveal">
-                        <h3>Prenota una Consulenza</h3>
-                        <p>Ti ricontatteremo entro 24 ore.</p>
-                        <form id="contactForm" onsubmit="handleSubmit(event)">
-                            <div class="form-row">
-                                <div class="form-group"><label for="nome">Nome</label><input type="text" id="nome" required placeholder="Il tuo nome"></div>
-                                <div class="form-group"><label for="cognome">Cognome</label><input type="text" id="cognome" required placeholder="Il tuo cognome"></div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group"><label for="email">Email</label><input type="email" id="email" required placeholder="La tua email"></div>
-                                <div class="form-group"><label for="telefono">Telefono</label><input type="tel" id="telefono" placeholder="Il tuo numero"></div>
-                            </div>
-                            <div class="form-group"><label for="interesse">Interesse Principale</label><select id="interesse"><option value="">Seleziona un'area</option><option>Percorso Integrato Completo</option><option>Osteopatia</option><option>Nutrizione</option><option>Allenamento</option><option>Dolori muscolo-scheletrici</option><option>Performance sportiva</option><option>Coaching Online</option><option>Altro</option></select></div>
-                            <div class="form-group"><label for="messaggio">Messaggio</label><textarea id="messaggio" placeholder="Raccontaci brevemente il tuo obiettivo..."></textarea></div>
-                            <div class="form-group" style="display:flex;align-items:flex-start;gap:.6rem;flex-direction:row;margin-top:.3rem">
-                                <input type="checkbox" id="privacy" required style="width:auto;margin-top:.35rem;flex:none">
-                                <label for="privacy" style="font-size:.8rem;line-height:1.5;font-weight:400;opacity:.85">Ho letto e accetto la <a href="https://www.iubenda.com/privacy-policy/81762129" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline">Privacy Policy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</label>
-                            </div>
-                            <button type="submit" class="form-submit">Richiedi Consulenza Gratuita</button>
-                        </form>
-                    </div>
+    <main id="main">
+        <section class="phero" data-theme="light">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal="up">Contatti</p>
+                <h1 class="phero-title display" data-reveal="lines"><span class="ln"><span>Inizia il tuo</span></span><span class="ln"><span>percorso <em>Areté</em></span></span></h1>
+                <div class="phero-meta" data-reveal="up">
+                    <p class="phero-lead">Compila il modulo o scrivici. Ti ricontatteremo per una consulenza conoscitiva gratuita.</p>
+                    <a href="#prenota" class="pill">Prenota la valutazione gratuita</a>
                 </div>
             </div>
         </section>
 
-        <section class="map-section">
-            <div class="map-wrap">
-                <div class="map-header reveal">
-                    <div class="section-label" style="text-align:center">Dove siamo</div>
-                    <h2 class="section-title" style="text-align:center">Vieni a <em>trovarci</em></h2>
-                    <p class="section-desc" style="text-align:center">Siamo a Segrate, alle porte di Milano. Facilmente raggiungibile in auto e con i mezzi pubblici.</p>
+        <section class="sec dark curve contact" id="prenota" data-theme="dark" style="--z:2">
+        <div class="marquee" aria-hidden="true"><div class="mq-track"><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div><div class="mq-set"><span>Vuoi saperne di più?</span><span>Prenota la tua valutazione</span></div></div></div>
+            <div class="wrap contact-grid">
+                <div class="contact-left">
+                    <p class="eyebrow" data-reveal="up">Raccontaci il tuo obiettivo</p>
+                    <h2 class="h2 display" data-reveal="lines"><span class="ln"><span><em>Parliamone.</em></span></span></h2>
+                    <p data-reveal="up">Ti aiuteremo a capire quale percorso è più adatto a te. La prima consulenza è gratuita e ti ricontattiamo entro 24 ore.</p>
+                    <ul class="clist" data-reveal="stagger">
+                        <li><a href="tel:+393517005245"><svg aria-hidden="true"><use href="#ic-phone"/></svg><span><small>Santiago Mencarelli, osteopata e trainer</small>351 700 5245</span></a></li>
+                        <li><a href="tel:+393665339627"><svg aria-hidden="true"><use href="#ic-phone"/></svg><span><small>Ivan Savaris, biologo nutrizionista e trainer</small>366 533 9627</span></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!%20Vorrei%20informazioni.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg><span><small>WhatsApp</small>Scrivici subito</span></a></li>
+                        <li><a href="mailto:aretesegrate@gmail.com"><svg aria-hidden="true"><use href="#ic-mail"/></svg><span><small>Email</small>aretesegrate@gmail.com</span></a></li>
+                        <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg><span><small>Instagram</small>@dr.mencarelli_osteopata</span></a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-pin"/></svg><span><small>Indirizzo</small>Via Conte Suardi 49, 20090 Segrate (MI)</span></a></li>
+                        <li><div class="cl-static"><svg aria-hidden="true"><use href="#ic-clock"/></svg><span><small>Orari, su appuntamento</small>Lun-Ven 7:00-22:00, sabato 8:00-13:00</span></div></li>
+                    </ul>
                 </div>
-                <div class="map-frame reveal">
-                    <div class="map-consent"><div class="map-consent-card"><div class="map-consent-pin"><svg><use href="#ic-pin"/></svg></div><strong>Via Conte Suardi 49</strong><span>20090 Segrate (MI)</span><button type="button" class="btn btn-green" onclick="loadMaps()">Mostra la mappa</button><small>La mappa è fornita da Google Maps: caricandola, Google potrà impostare i propri cookie.</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener">Apri in Google Maps</a></div></div><iframe data-map-src="https://maps.google.com/maps?q=Via%20Conte%20Suardi%2049%2C%2020090%20Segrate%20MI&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Areté, Via Conte Suardi 49, Segrate"></iframe>
+                <div class="contact-right">
+                <form class="bform" id="contactForm" onsubmit="handleSubmit(event)" data-reveal="up">
+                    <h3>Prenota una consulenza</h3>
+                    <div class="brow2">
+                        <div class="bfield"><label for="nome">Nome</label><input id="nome" name="nome" required autocomplete="given-name" placeholder="Il tuo nome"></div>
+                        <div class="bfield"><label for="cognome">Cognome</label><input id="cognome" name="cognome" required autocomplete="family-name" placeholder="Il tuo cognome"></div>
+                    </div>
+                    <div class="brow2">
+                        <div class="bfield"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="La tua email"></div>
+                        <div class="bfield"><label for="telefono">Telefono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="Il tuo numero"></div>
+                    </div>
+                    <div class="bfield"><label for="interesse">Mi interessa</label><select id="interesse" name="mi_interessa" required><option value="">Seleziona</option><option>Fisioterapia</option><option>Nutrizione</option><option>Entrambi</option></select></div>
+                    <div class="bfield"><label for="messaggio">Messaggio</label><textarea id="messaggio" name="messaggio" placeholder="Raccontaci brevemente il tuo obiettivo"></textarea></div>
+                    <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="pagina" id="pagina_prov"><input type="hidden" name="t" id="form_t">
+                    <div class="hp-field" aria-hidden="true"><label for="hp_website">Sito web (non compilare)</label><input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off"></div>
+                    <div class="bconsent"><input type="checkbox" id="privacy" name="consenso" value="1" required><label for="privacy">Ho letto e accetto la <a href="https://www.iubenda.com/privacy-policy/81762129" target="_blank" rel="noopener">Privacy Policy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</label></div>
+                    <button type="submit" class="pill">Richiedi la consulenza gratuita</button>
+                    <button type="button" class="bform-wa" onclick="openWhatsAppForm()">oppure scrivici su WhatsApp</button>
+                </form>
+                <div class="brand-mark display" aria-hidden="true"><span class="bm-l">A</span><span class="bm-l">R</span><span class="bm-l">E</span><span class="bm-l">T</span><span class="bm-l e">É</span></div>
                 </div>
-                <div class="map-actions">
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener" class="btn btn-green"><svg style="width:14px;height:14px;fill:currentColor"><use href="#ic-route"/></svg>Indicazioni Stradali</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener" class="btn btn-outline-dark">Apri in Google Maps</a>
-                </div>
+            </div>
+        </section>
 
-                <div class="studio-gallery reveal" style="margin-top:3rem">
-                    <div class="studio-shot">
-                        <img src="/img/osteopatia-lettino.jpg" alt="Lettino da trattamento osteopatico nello studio Areté a Segrate" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Sala Osteopatia</div>
+        <section class="sec curve" data-theme="light" style="--z:3">
+            <div class="wrap">
+                <div class="sec-head sec-head--row">
+                    <div>
+                        <p class="eyebrow" data-reveal="up">Dove siamo</p>
+                        <h2 class="h2 display" data-reveal="lines"><span class="ln"><span>Vieni a</span></span><span class="ln"><span><em>trovarci</em></span></span></h2>
                     </div>
-                    <div class="studio-shot">
-                        <img src="/img/osteopatia-lettino-postazione.jpg" alt="Lettino, sgabello e statimetro per la valutazione posturale" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Valutazione</div>
-                    </div>
-                    <div class="studio-shot">
-                        <img src="/img/palestra-sala-vista.jpg" alt="Sala allenamento privata dello studio Areté a Segrate con panca e rastrelliere manubri" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Sala Allenamento</div>
-                    </div>
-                    <div class="studio-shot">
-                        <img src="/img/palestra-panca-manubri.jpg" alt="Panca regolabile e manubri esagonali" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Manubri</div>
-                    </div>
-                    <div class="studio-shot">
-                        <img src="/img/palestra-area-funzionale.jpg" alt="Area funzionale con kettlebell, fitball, plyo box e tapis roulant" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Funzionale</div>
-                    </div>
-                    <div class="studio-shot">
-                        <img src="/img/bagno-doccia.jpg" alt="Bagno con doccia a disposizione di chi si allena" loading="lazy" width="1600" height="1200">
-                        <div class="studio-shot-cap">Bagno con Doccia</div>
-                    </div>
+                    <p class="sec-desc" data-reveal="up">Siamo a Segrate, alle porte di Milano. Facilmente raggiungibile in auto e con i mezzi pubblici.</p>
+                </div>
+                <div class="map-frame" data-reveal="up">
+                    <div class="map-consent"><div class="map-card"><svg aria-hidden="true"><use href="#ic-pin"/></svg><strong>Via Conte Suardi 49</strong><span>20090 Segrate (MI)</span><button type="button" class="pill" onclick="loadMaps()">Mostra la mappa</button><small>La mappa è fornita da Google Maps: caricandola, Google potrà impostare i propri cookie.</small></div></div>
+                    <iframe data-map-src="https://maps.google.com/maps?q=Via%20Conte%20Suardi%2049%2C%2020090%20Segrate%20MI&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Areté, Via Conte Suardi 49, Segrate"></iframe>
+                </div>
+                <div class="map-actions" data-reveal="up">
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener" class="pill"><svg aria-hidden="true"><use href="#ic-route"/></svg>Indicazioni stradali</a>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Conte+Suardi+49,+Segrate,+MI" target="_blank" rel="noopener" class="link-arrow">Apri in Google Maps <svg aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+                </div>
+                <div class="gal" data-reveal="stagger">
+                    <figure><div class="gal-img"><img src="/img/osteopatia-lettino.jpg" alt="Lettino da trattamento osteopatico nello studio Areté a Segrate" loading="lazy" width="1600" height="1200"></div><figcaption>Sala osteopatia</figcaption></figure>
+                    <figure><div class="gal-img"><img src="/img/osteopatia-lettino-postazione.jpg" alt="Lettino, sgabello e statimetro per la valutazione posturale" loading="lazy" width="1600" height="1200"></div><figcaption>Valutazione</figcaption></figure>
+                    <figure><div class="gal-img"><img src="/img/palestra-sala-vista.jpg" alt="Sala allenamento privata dello studio Areté a Segrate con panca e rastrelliere manubri" loading="lazy" width="1600" height="1200"></div><figcaption>Sala allenamento</figcaption></figure>
+                    <figure><div class="gal-img"><img src="/img/palestra-panca-manubri.jpg" alt="Panca regolabile e manubri esagonali" loading="lazy" width="1600" height="1200"></div><figcaption>Manubri</figcaption></figure>
+                    <figure><div class="gal-img"><img src="/img/palestra-area-funzionale.jpg" alt="Area funzionale con kettlebell, fitball, plyo box e tapis roulant" loading="lazy" width="1600" height="1200"></div><figcaption>Funzionale</figcaption></figure>
+                    <figure><div class="gal-img"><img src="/img/bagno-doccia.jpg" alt="Bagno con doccia a disposizione di chi si allena" loading="lazy" width="1600" height="1200"></div><figcaption>Bagno con doccia</figcaption></figure>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand-area">
-                <div class="footer-logo">ARET<span>É</span></div>
-                <p>Il metodo integrato che unisce Osteopatia, Nutrizione e Allenamento in un unico percorso esclusivo a Segrate, alle porte di Milano.</p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-ig"/></svg></a>
-                    <a href="https://api.whatsapp.com/send/?phone=393517005245&text=Ciao!&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#ic-wa"/></svg></a>
-                    <a href="tel:+393517005245" aria-label="Telefono"><svg><use href="#ic-phone"/></svg></a>
+    <!-- FOOTER -->
+    <footer class="footer curve" data-theme="dark" style="--z:20">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h4>Pagine</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/osteopatia/">Osteopatia</a></li>
+                        <li><a href="/nutrizione/">Nutrizione</a></li>
+                        <li><a href="/allenamento/">Allenamento</a></li>
+                        <li><a href="/chi-siamo/">Chi siamo</a></li>
+                        <li><a href="/faq/">Domande frequenti</a></li>
+                        <li><a href="/contatti/">Contatti</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Orari, su appuntamento</h4>
+                    <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                    <h4>Studio</h4>
+                    <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                </div>
+                <div>
+                    <h4>Seguici e scrivici</h4>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                        <li><a href="tel:+393517005245"><svg aria-hidden="true"><use href="#ic-phone"/></svg>351 700 5245</a></li>
+                        <li><a href="mailto:aretesegrate@gmail.com"><svg aria-hidden="true"><use href="#ic-mail"/></svg>aretesegrate@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-section">
-                <h4>Navigazione</h4>
-                <ul class="footer-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/osteopatia/">Osteopatia</a></li>
-                    <li><a href="/nutrizione/">Nutrizione</a></li>
-                    <li><a href="/allenamento/">Allenamento</a></li>
-                    <li><a href="/chi-siamo/">Chi Siamo</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                    <li><a href="/contatti/">Contatti</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Patologie Trattate</h4>
-                <ul class="footer-links">
-                    <li><a href="/osteopatia/">Mal di schiena</a></li>
-                    <li><a href="/osteopatia/">Cervicalgia</a></li>
-                    <li><a href="/osteopatia/">Sciatalgia</a></li>
-                    <li><a href="/osteopatia/">Gonalgia</a></li>
-                    <li><a href="/osteopatia/">Postura</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contatti</h4>
-                <div class="footer-ci"><svg><use href="#ic-pin"/></svg><div class="footer-ci-content"><strong>Studio Areté</strong>Via Conte Suardi 49<br>20090 Segrate (MI)</div></div>
-                <div class="footer-ci"><svg><use href="#ic-clock"/></svg><div class="footer-ci-content">Lun-Ven 7:00-22:00<br>Sab 8:00-13:00<br><em style="font-size:.75rem;opacity:.7">Su appuntamento</em></div></div>
-                <div class="footer-ci"><svg><use href="#ic-phone"/></svg><div class="footer-ci-content"><a href="tel:+393517005245">351 700 5245</a> · Santiago<br><a href="tel:+393665339627">366 533 9627</a> · Ivan</div></div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copy">© 2026 Areté, Osteopatia, Nutrizione e Allenamento · Segrate (Milano)</div>
-            <div class="footer-legal" style="margin-top:.6rem;font-size:.82rem">
-                <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Privacy Policy</a>
-                <span style="color:rgba(250,248,244,.25)">·</span>
-                <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:rgba(250,248,244,.55);text-decoration:none">Cookie Policy</a>
+            <div class="footer-bottom">
+                <small>© 2026 Areté, osteopatia, nutrizione e allenamento · Segrate (Milano)</small>
+                <span>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                    <a href="https://www.iubenda.com/privacy-policy/81762129/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+                </span>
             </div>
         </div>
         <script type="text/javascript">(function (w,d){var loader=function(){var s=d.createElement("script"),tag=d.getElementsByTagName("script")[0];s.src="https://cdn.iubenda.com/iubenda.js";tag.parentNode.insertBefore(s,tag);};if(w.addEventListener){w.addEventListener("load",loader,false);}else if(w.attachEvent){w.attachEvent("onload",loader);}else{w.onload=loader;}})(window,document);</script>
     </footer>
 
+    <!-- MENU A TENDINA -->
+    <div class="bmenu" id="bmenu" aria-hidden="true" aria-label="Menu">
+        <div class="bmenu-cols">
+            <a class="mcol" href="/osteopatia/" style="--i:0"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Osteopatia</span></a>
+            <a class="mcol" href="/nutrizione/" style="--i:1"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Nutrizione</span></a>
+            <a class="mcol" href="/allenamento/" style="--i:2"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Allenamento</span></a>
+            <a class="mcol" href="/chi-siamo/" style="--i:3"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Chi siamo</span></a>
+            <a class="mcol" href="/faq/" style="--i:4"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">FAQ</span></a>
+            <a class="mcol" href="/contatti/" aria-current="page" style="--i:5"><svg class="mcol-arr" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span class="mcol-word">Contatti</span></a>
+            <div class="mcol mcol--info">
+                <h5>Scrivici</h5>
+                <p><a href="mailto:aretesegrate@gmail.com">aretesegrate@gmail.com</a><br><a href="tel:+393517005245">351 700 5245</a>, Santiago<br><a href="tel:+393665339627">366 533 9627</a>, Ivan</p>
+                <h5>Dove siamo</h5>
+                <p>Via Conte Suardi 49<br>20090 Segrate (MI)</p>
+                <h5>Orari, su appuntamento</h5>
+                <p>Da lunedì a venerdì, dalle 7:00 alle 22:00<br>Sabato, dalle 8:00 alle 13:00</p>
+                <h5>Seguici</h5>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/dr.mencarelli_osteopata/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=393517005245&amp;text=Ciao!&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="/js/app.js" defer></script>
+    <script src="/js/home.js" defer></script>
 </body>
 </html>
